@@ -110,6 +110,8 @@
         if(button.textAlignment){
             [self.editorViewController setTextAlignment:button.format];
         }else if(button.textFormatting){
+            NSString *stuff = [self.editorViewController getHTML];
+
             [self.editorViewController setTextFormat:button.format andApply:button.active];
         }else if(button.lineAlignment){
             [self.editorViewController setLineAlignment:button.format];

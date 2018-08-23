@@ -209,3 +209,7 @@ function setHTML(html){
 function getHTML(){
     return editor.getHTML();
 }
+
+function getContents() {
+    return JSON.stringify(editor.getContents());
+}

@@ -204,7 +204,7 @@ static Class hackishFixClass = Nil;
 }
 
 -(NSString *)getHTML{
-    NSString *htmlGetter = [NSString stringWithFormat:@"getHTML();"];
+    NSString *htmlGetter = [NSString stringWithFormat:@"getContents()"];
     return [_webView stringByEvaluatingJavaScriptFromString:htmlGetter];
 }
 
